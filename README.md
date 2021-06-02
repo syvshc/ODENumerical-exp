@@ -19,6 +19,14 @@ fc-cache -fv
 \setmonofont{JetBrains Mono}
 ```
 
+## `minted` 宏包
+本文档使用了 [`minted`](https://www.ctan.org/pkg/minted) 宏包来排版代码, 该宏包需要 `python` 与 python 模块 `pygments`. 安装方法:
+1. 从 [python 官网](https://www.python.org/) 下载最新版的 `python`,
+2. 在命令行运行 `pip install pygments` 安装 `pygments`,
+3. 命令行运行 `pygmentize -L lexers` 来查看 `pygments` 可以渲染的语言,
+4. 编译的时候记得添加编译选项 `-shell-escape`
+
+如果是 [`Anaconda`](https://www.anaconda.com/) 用户, 可以将第 2 步中的 `pip` 改为 `conda` 来使用 `conda` 安装. 
 
 
 其中 MATLAB 代码的运行环境为 `MATLAB2021a`
