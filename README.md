@@ -28,16 +28,26 @@ fc-cache -fv
 
 如果是 [`Anaconda`](https://www.anaconda.com/) 用户, 可以将第 2 步中的 `pip` 改为 `conda` 来使用 `conda` 安装. 
 
+## MATLAB 代码
 
 其中 MATLAB 代码的运行环境为 `MATLAB2021a`
 
 ## 编译方式
 
+**本文档建议使用命令行编译**
+
 `clone` 或 `下载 zip` 后在 `ODENumerical-exp` 文件夹下用命令行运行 
 ```bash
 latexmk -pvc-
 ```
-即可
+即可.
+
+如果使用的是 [TeXStudio](https://www.texstudio.org/) 等 IDE, 或不习惯使用命令行, 可以执行
+```bash
+xelatex -shell-escape ODE
+xelatex -shell-escape ODE
+```
+来编译, 注意其中的 `-shell-escape` 选项是必需的, 如果无法编译请检查 IDE 中对于编译命令的设置. 
 
 ## 开源协议
 
